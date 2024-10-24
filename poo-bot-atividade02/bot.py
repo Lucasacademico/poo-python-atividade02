@@ -49,7 +49,7 @@ def instanciar_produtos():
 
 
 def preencher_formulario(bot):
-    bot.browse(r"C:\Users\lrand\OneDrive\Área de Trabalho\Atividade 02\poo-bot-atividade02\index.html")
+    bot.browse(r"INSIRA LOCAL DO INDEX.HTML AQUI")
     for produto in Produto.qtd_produto:
         bot.find_element('//*[@id="nome"]', By.XPATH).send_keys(produto.nome)
         bot.wait(1000)
